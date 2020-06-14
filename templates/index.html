@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="content">
+    <nav class="sst-bordered" id="main-header">
+      <span>
+        <span class="product-name unselectable">
+            Smart Steel Technologies - Frontend Demo &nbsp;&nbsp;&nbsp;&nbsp;
+        </span>
+      </span>
+    </nav>
+    <div id="control">
+        <fieldset>
+            <legend>Control Options</legend>
+            <div>
+                <label for="class_label">Class Label</label><br>
+                <select id="class_label">
+                    <option value="both" selected="selected">Both</option>
+                    <option value="1.0">Class 1.0</option>
+                    <option value="-1.0">Class -1.0</option>
+                </select>
+            </div>
+            <div>
+                <label for="sensor">Sensor</label><br>
+                <select id="sensor">
+                    <option value="All">All</option>
+                    <option value="sensor0" selected="selected">Sensor 0</option>
+                    <option value="sensor1">Sensor 1</option>
+                    <option value="sensor2">Sensor 2</option>
+                    <option value="sensor3">Sensor 3</option>
+                    <option value="sensor4">Sensor 4</option>
+                    <option value="sensor5">Sensor 5</option>
+                    <option value="sensor6">Sensor 6</option>
+                    <option value="sensor7">Sensor 7</option>
+                    <option value="sensor8">Sensor 8</option>
+                    <option value="sensor9">Sensor 9</option>
+                </select>
+            </div>
+            <div>
+                <label for="osv">Order ASC</label><br>
+                <select id="osv">
+                    <option value="no" select="selected">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+            </div>
+            <div>
+                <label for="avsv">Average Sensor Values</label><br>
+                <div data-title="This option is activated when all sensors are selected and the H/L option is set to &quot;Don't show&quot;" id="avsvtip" class="tooltip">
+                    <select id="avsv">
+                        <option value="no" select="selected">Don't Show</option>
+                        <option value="yes">Show</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="hlv">Highest/Lowest (H/L)</label><br>
+                <div data-title="This option is activated when all sensors are selected and the Average option is set to &quot;Don't show&quot;" id="hlvtip" class="tooltip">
+                    <select id="hlv">
+                        <option value="no" selected="selected">Don't show</option>     
+                        <option value="yes">H/L By Samples</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div id="charthead">CHART</div>
+    <div id="chart"></div>
+    <div id="tablehead">SELECTED DATA</div>
+    <div id="tablecon"></div>
+    <div id="sleft">&#x2770;</div>
+    <div id="sright">&#10097;</div>
+    <div id="me"><b>Made by:</b> Enyinna Iroegbu &nbsp;&nbsp;&nbsp;<b>Email:</b> enyinna.job@gmail.com</div>
+</div>
+{% endblock %}
