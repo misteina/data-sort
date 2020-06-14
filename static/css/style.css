@@ -1,0 +1,150 @@
+html, body{
+    font-family: sans-serif;
+    width: 100%;
+    min-width: 1300px;
+    margin: 0;
+    padding: 0;
+    color: #dcdcdc;
+    background-color: #141414;
+}
+label{
+    font-size: 15px;
+    color: #b9b9b9;
+}
+select{
+    width: 120px;
+    height: 40px;
+    background-color: #232323;
+    border-radius: 4px;
+    padding: 0 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    border: 1px solid #1b1b1b;
+    background-image: linear-gradient(#7b7b7b, #565656);
+}
+*:focus{
+    outline: none;
+}
+fieldset{
+    width: 95%;
+    margin: auto;
+    padding: 14px 0;
+    border-radius: 4px;
+    border: 1px solid #696868;
+}
+legend{
+    color: #cac9c9;
+    font-size: 14px;
+}
+#content{
+    width: 98%;
+    margin: auto;
+}
+#charthead, #tablehead{
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+#main-header{
+    padding: 10px 2px;
+}
+#control{
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    background-color: #3a3a3a;
+}
+#control div{
+    display: inline-block;
+    margin-left: 20px;
+}
+#control div div{
+    margin: 0;
+}
+#tablecon{
+    width: 100%;
+    overflow-x: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+table{
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-spacing: 1px;
+    display: inline-table;
+}
+th{
+    font-size: 12px;
+    white-space: nowrap;
+    padding: 10px;
+    border: 1px solid #717171;
+    background-color: #444444;
+}
+td{
+    color: #b3b1b1;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid #444444;
+}
+#error {
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    padding-top: 30vh;
+    text-align: center;
+    top: 0;
+    left: 0;
+    color: #ff4848;
+    background-color: #141414;
+}
+#chart{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+}
+#sleft, #sright{
+    position: fixed;
+    padding: 20px;
+    background-color: red;
+    color: white;
+    top: 50vh;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+#sleft{
+    left: 10px;
+}
+#sright{
+    right: 10px;
+}
+#me{
+    position: fixed;
+    width: 98%;
+    left: 0;
+    bottom: 0;
+    text-align: right;
+    font-size: 12px;
+    padding: 10px 1%;
+    border-top: 1px solid #2d2d2d;
+    background-color: #141414;
+}
+.tooltip{
+  position:relative;
+}
+.tooltip[data-title]:hover:after {
+  content: attr(data-title);
+  width: 100px;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: black;
+  position: absolute;
+  left: 0;
+  top: 110%;
+  border-radius: 5px;  
+  background: rgb(182, 182, 182);
+  z-index: 5;
+}
