@@ -1,9 +1,3 @@
-//+------------------------------------------------------------------+                                                    |
-//| Front End Demo Task For Smart Steel Technologies                 |
-//| Created by: Enyinna Iroegbu                                      |
-//| Email: enyinna.job@gmail.com                                     |
-//+------------------------------------------------------------------+
-
 window.onload = function(){
     var req = new XMLHttpRequest();
     req.onreadystatechange = function () {
